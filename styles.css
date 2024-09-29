@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px; /* Add padding for small screens */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Limit width to ensure it doesn't stretch too far */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.section {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.summary {
+  grid-column: span 2;
+  padding: 20px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+}
+
+.summary h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .calculator-grid {
+    grid-template-columns: 1fr; /* Stack sections vertically */
+  }
+
+  .summary {
+    grid-column: span 1; /* Ensure summary takes full width */
+  }
+
+  body {
+    padding: 5px; /* Adjust body padding for smaller screens */
+  }
+
+  .container {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+}
