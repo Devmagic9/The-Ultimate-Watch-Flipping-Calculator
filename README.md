@@ -1,14 +1,15 @@
 # Watch Flipping Calculator
 
-This small web app helps evaluate potential profit when flipping watches. Enter purchase details, selling details, and the calculator will display total costs, net profit, ROI, and break‑even price.
+This React + Vite app helps you determine a profitable selling price when flipping watches. Enter your purchase information and desired ROI and the calculator will suggest a price that accounts for fees and expenses.
 
-### Features
-- Instant calculations while you type.
-- Visual indication of profit (green) or loss (red).
-- Reset button to quickly clear all inputs.
+## Features
+- Modern interface built with Tailwind CSS and shadcn/ui components.
+- Calculates Total Costs, Break‑Even Price, Suggested Selling Price, Net Profit and ROI.
+- Color coded profit/loss.
+- Responsive layout that works on mobile and desktop.
 
-### Usage
-Open `index.html` in your browser. Fill in the purchase and selling details to see the results update automatically.
+## Development
+1. Install dependencies with `npm install`.
+2. Run the dev server with `npm run dev`.
 
-### Development
-All logic is implemented in `app.js` and styled with `styles.css`. Feel free to modify or extend functionality.
+Tailwind configuration is in `tailwind.config.js`. Main logic lives in `src/App.jsx`.
