@@ -2,15 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/The-Ultimate-Watch-Flipping-Calculator/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Watch Flipping Calculator</title>
-    <script type="module" crossorigin src="/The-Ultimate-Watch-Flipping-Calculator/assets/index-BdMLXxIP.js"></script>
-    <link rel="stylesheet" crossorigin href="/The-Ultimate-Watch-Flipping-Calculator/assets/index-CwpcBrjK.css">
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#ffffff',
+              foreground: '#0f172a',
+              card: '#ffffff',
+              'card-foreground': '#0f172a',
+              muted: '#f3f4f6',
+              primary: { DEFAULT: '#2563eb', foreground: '#ffffff' },
+              input: '#e2e8f0',
+              ring: '#2563eb'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-muted/40">
     <div id="root"></div>
-    <!-- Vite transforms JSX in development/build. -->
-    <!-- Avoid opening this file directly in the browser. -->
+    <script type="module" src="app.js"></script>
   </body>
 </html>
