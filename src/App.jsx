@@ -31,8 +31,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="container mx-auto grid md:grid-cols-2 gap-6 max-w-4xl">
-        <Card>
+      <div className="max-w-4xl mx-auto px-4 py-8 w-full">
+        <h1 className="text-2xl font-bold mb-4 text-center">Watch Flipping Calculator</h1>
+        <div className="grid gap-6 md:grid-cols-2">
+        <Card className="bg-muted/40 rounded-lg">
           <CardHeader>
             <CardTitle>Watch Details</CardTitle>
           </CardHeader>
@@ -64,11 +66,11 @@ export default function App() {
             </Button>
           </CardFooter>
         </Card>
-        <Card>
+        <Card className="bg-muted/40 rounded-lg">
           <CardHeader>
             <CardTitle>Results</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-2 text-sm">
+          <CardContent className="space-y-3 text-sm md:text-base">
             <p>Total Costs: ${totalCosts.toFixed(2)}</p>
             <p>Break-Even Price: ${breakEvenPrice.toFixed(2)}</p>
             <p>Suggested Selling Price: ${suggestedPrice.toFixed(2)}</p>
@@ -76,6 +78,7 @@ export default function App() {
             <p className={profitColor}>ROI: {roi.toFixed(2)}%</p>
           </CardContent>
         </Card>
+        </div>
       </div>
     </div>
   )
