@@ -75,6 +75,20 @@ h1 {
   text-align: center;
 }
 
+.summary button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.summary button:hover {
+  background-color: #0d47a1;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .calculator-grid {
